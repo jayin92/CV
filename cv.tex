@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[a4paper,20pt]{article}
+\documentclass[a4paper8pt]{extarticle}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -14,8 +14,16 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{hyperref}
+\usepackage[
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{fontspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+
+\setCJKmainfont{Noto Serif TC}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -24,11 +32,20 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.530in}
-\addtolength{\evensidemargin}{-0.375in}
+
+
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.45in}
+
+
 \addtolength{\textheight}{1in}
+
+\usepackage[
+top=1cm,
+bottom=0.5cm,
+left=1cm,
+right=1cm,
+]{geometry} 
+
 
 \urlstyle{rm}
 
@@ -80,9 +97,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Jie-Ying (Jay) Lee}} & Email: \href{mailto:}{jayin920805@gmail.com}\\
-  \href{https://www.linkedin.com/in/jayinnn/}{Linkedin: https://www.linkedin.com/in/jayinnn/} & Mobile:~~~+886-977-122-420 \\
-  \href{https://github.com/jayin92}{Github: https://github.com/jayin92/} \\
+  \textbf{{\Huge Jie-Ying Lee}} & Email: \href{mailto:jayin920805@gmail.com}{\underline{jayin920805@gmail.com}}\\
+  Linkedin: \href{https://www.linkedin.com/in/jayinnn/}{\underline{https://www.linkedin.com/in/jayinnn/}} & Mobile:~~~+886-977-122-420 \\
+  Github: \href{https://github.com/jayin92}{\underline{https://github.com/jayin92/}} \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -90,30 +107,29 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
-      {B.S. in Computer Science;  GPA: 4.21/4.3}{July 2021 - Present}
+      {B.S. in Computer Science;  GPA: 4.22/4.3 (Overall), 4.28/4.3 (Major)}{July 2021 - Present}
       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structures and Object-oriented Programming, Introduction to A.I., Introduction to Computer Networking, Computer Vision for UAV Autopilot, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System Administration}}}
     \resumeSubHeadingListEnd
-	    
-\section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Python, C/C++, PHP, Javascripts, Bash, SQL}
-	\resumeSubItem{Frameworks}{~~~~PyTorch, Scikit, NLTK, Django, Laravel, Flask}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, Git}
-	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, GCP, Arduino}
-\resumeSubHeadingListEnd
+
 
 \vspace{-5pt}
 \section{Experiences}
   \resumeSubHeadingListStart
     \resumeSubheading{IT Center of Department of Computer Science, NYCU}{}
     {Teaching Assistant of WWW and System Group}{July 2022 - Present}
-    
+    \begin{itemize}
+    	\setlength\itemsep{0.001em}
+    	\item Developed the backend of teaching assistant contact information system using PHP and Laravel.
+    	\item Learned how to design the database schema and write RESTful API.
+    	\item Using OpenAPI to write API document.
+    	\item Maintenance Kubernetes cluster and workstations used in CS department in system group.
+    \end{itemize}    
     \resumeSubheading
 		{PCS Lab}{}
 		{Research Assistant}{July 2021 -  Present}
-		
-		Lab is led by Yi-Bing, Lin.
-
+		\begin{itemize}
+			\item Conducting research about using GAN and CNN to generate realistic 3D terrain model.
+		\end{itemize}
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
@@ -123,7 +139,7 @@
 \resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, Python, Django)}{Final project of introduction to database system. Using Nuxt and Vuetify to create a modern-look frontend. Also use Django as backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
 \resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{A simple accounting bot that allows users to record expenses via the Telegram application. \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
 \vspace{2pt}
-\resumeSubItem{pix2pix-terrain-generator (Python, GAN, Unity, Web Development)}{Using height maps and satellite images to train a GAN model that can be used to generate a realistic terrain model. I also develop a web client and a Unity client to make model can be used more easily. \href{https://github.com/jayin92/pix2pix-terrain-generator}{\underline{Link}} (Jul. 2020)}
+\resumeSubItem{pix2pix-terrain-generator (Python, GAN, Unity, Web Development)}{Using height maps and satellite images to train a GAN model that can be used to generate a realistic terrain model. Also develop a web client and a Unity client to make model can be used more easily. \href{https://github.com/jayin92/pix2pix-terrain-generator}{\underline{Link}} (Jul. 2020)}
 \vspace{2pt}
 \resumeSubItem{UbikeAnywhereBot (Python, API, Crawler)}{A telegram chat bot that can plan the route. After users tell our bot the destination, this bot can automatically find the nearest available Ubike station and give users the route to the return station. \href{https://github.com/jayin92/UBikeAnywhereBot}{\underline{Link}} (Jul. 2019)}
 \resumeSubHeadingListEnd
@@ -133,19 +149,22 @@
 \section{Awards}
 \resumeSubHeadingListStart
 \resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Marconix Science Award. The only recipient wthin 6 years.}
-\vspace{2pt}
-\resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from every region.}
-\vspace{2pt}
+\vspace{0.5pt}
+\resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
+\vspace{0.5pt}
 \resumeSubItem{Fourth Prize in 2021 Taiwan International Science Fair}{Be awarded the fourth prize out of 21 participants from world.}
-\vspace{2pt}
+\vspace{0.5pt}
+\resumeSubItem{Bronze Award of The 2022 ICPC Asia Taoyuan Regional Programming Contest}{Thirty-second place out of 100 teams. Second place of the bronze award.}
+\vspace{0.5pt}
+\resumeSubItem{Academic Achievements Award in 2022 Fall Semester}{Top 5 \% in the class.}
+\vspace{0.5pt}
 \resumeSubItem{Academic Achievements Award in 2021 Fall Semester}{Top 5 \% in the class.}
-\vspace{2pt}
-\resumeSubItem{Fundamental Course Award of Discrete Mathematics}{First place out of 92 students. Total score: 99/100. The final grade ranking in 5\% can get the award.}
-\vspace{2pt}
-\resumeSubItem{Fundamental Course Award of Data Structures \& Object-oriented Programming}{First place out of 88 students. Total score: 99/100. The final grade ranking in 5\% can get the award.}
-\vspace{2pt}
-\resumeSubItem{Fundamental Course Award of Digital Circuit Design}{Second place out of 121 students. Total score: 99/100. The final grade ranking in 5\% can get the award.}
-
+\vspace{0.5pt}
+\resumeSubItem{Fundamental Course Award of Discrete Mathematics}{First place out of 92 students.}
+\vspace{0.5pt}
+\resumeSubItem{Fundamental Course Award of Data Structures \& Object-oriented Programming}{First place out of 88 students.}
+\vspace{0.5pt}
+\resumeSubItem{Fundamental Course Award of Introduction to Algorithms}{Second place out of 121 students.}
 
 
 \resumeSubHeadingListEnd
@@ -158,21 +177,14 @@
     {President}{July 2022 - Present}
     % \vspace{0.5pt}
     
-    Led 60 members from various of departments in NYCU to organized welcoming camp, campus tour for over 50 students from Taoyaun, Yunlin and Chiayi. 
-\vspace{1pt}
-    \resumeSubheading
-    {NYCU CS Badminton Team}{}
-    {Vice Team Captain}{July 2022 - Present}
-    % \vspace{0.5pt}
-    
-    In charge of practicing and leading the team to participate various competitions.
+    Led 120 members from various of departments in NYCU to organized welcoming camp, campus tour for over 50 students from Taoyaun, Yunlin and Chiayi. 
 \vspace{1pt}
     \resumeSubheading
     {SITCON 2022 Agenda Committee}{}
     {Member}{Mar. 2022 - Sep. 2022}
     % \vspace{0.5pt}
     
-    Organized events and review agendas at SITCON (the largest student information conference in East Asia). I also responsible for organizing the forum that discusses the problem of information education in Taiwan.
+    Organized events and review agendas at SITCON (the largest student information conference in East Asia), also responsible for organizing the forum that discusses the issues of information education in Taiwan.
     \vspace{1pt}
     \resumeSubheading
     {Wu-Ling High School Information Study Group}{}
