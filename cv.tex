@@ -40,10 +40,10 @@
 \addtolength{\textheight}{1in}
 
 \usepackage[
-top=0.5cm,
-bottom=0.1cm,
+top=1cm,
+bottom=1cm,
 left=1cm,
-right=1cm,
+right=1.25cm,
 ]{geometry} 
 
 
@@ -52,6 +52,7 @@ right=1cm,
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
 
 % Sections formatting
 \titleformat{\section}{
@@ -97,7 +98,7 @@ right=1cm,
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Huge Jie-Ying Lee}} & Email: \href{mailto:jayin920805@gmail.com}{\underline{jayin920805@gmail.com}}\\
+  \textbf{{\Huge Jie-Ying (Jay) Lee}} & Email: \href{mailto:jayin920805@gmail.com}{\underline{jayin920805@gmail.com}}\\
   Linkedin: \href{https://www.linkedin.com/in/jayinnn/}{\underline{https://www.linkedin.com/in/jayinnn/}} & Mobile:~~~+886-977-122-420 \\
   Github: \href{https://github.com/jayin92}{\underline{https://github.com/jayin92/}} \\
 \end{tabular*}
@@ -107,64 +108,85 @@ right=1cm,
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
-      {B.S. in Computer Science;  GPA: 4.22/4.3 (Overall), 4.28/4.3 (Major)}{July 2021 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} DS and OOP, Introduction to A.I., Introduction to Computer Networking, Computer Vision for UAV Autopilot, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System Administration}}}
+      {B.S. in Computer Science;  GPA: 4.23/4.3 (Overall), 4.26/4.3 (Major)}{Jul. 2021 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} DS and OOP, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System and Network Administration}}}
     \resumeSubHeadingListEnd
 
 
-\vspace{-5pt}
+\vspace{-1.25em}
 \section{Experiences}
   \resumeSubHeadingListStart
     \resumeSubheading{IT Center of Department of Computer Science, NYCU}{\small Linux, Kubernetes, PHP, Laravel, Vue, CI/CD, GitLab flow}
     {Teaching Assistant of WWW and System Group}{July 2022 - Present}
-    \begin{itemize}
-    	\setlength\itemsep{0.001em}
-    	\item Developed the backend of teaching assistant contact information system using PHP and Laravel.
-    	\item Learned how to design the database schema and write RESTful API, also used OpenAPI to write API document.
-    	\item Understood the process of software development, including git version control, merge requests and CI/CD.
-    	\item Maintained Kubernetes cluster and linux workstations used in CS department in system group. Also had experience in surveying Fluentd and fluent bit.
-    \end{itemize}    
+    
+    \vspace{0.25em}
+    Developed the backend of teaching assistant contact information system using PHP and Laravel. And learned how to design the database schema and write RESTful API, also used OpenAPI to write API document. Also Understood the process of software development, including git version control, merge requests and CI/CD.
+    %\begin{itemize}
+    %	\setlength\itemsep{0.001em}
+    %	\item 
+    %	\item Learned how to 
+    %	\item 
+    %	\item Maintained Kubernetes cluster and linux workstations used in CS department in system group. Also had experience in surveying Fluentd and fluent bit.
+    %\end{itemize}
+    	\vspace{-0.5em}
     \resumeSubheading
-		{PCS Lab}{\small GAN, Python, PyTorch, Scientific Research}
-		{Research Assistant}{July 2021 -  Present}
-		\begin{itemize}
-			\item Conducting a research using GAN and CNN to generate realistic 3D terrain model.
-		\end{itemize}
+       	{Microsoft}{\small .NET Framework, jQuery}
+       	{Research \& Development Intern at Bing Geocoding}{Sep. 2023 - Present}
+       	
+       	\vspace{0.25em}
+       	Refined the dashboard used by engineers and scientists for evaluated the performance.
+       	\vspace{-0.5em}
+    \resumeSubheading
+    	{Appier}{\small MongoDB, Trino, Argo Workflow, Kubernetes, GCP, BigQuery, Looker Studio, System Design}
+    	{Backend Engineer Summer Intern}{Jul. 2023 - Sep. 2023}
+    	
+    	\vspace{0.25em}
+    	Developed a novel system to visualize the cloud service cost of each customer on each feature. Used Google Cloud Storage and Looker Studio for visualization. Tested and deployed to production environment.
+    	\vspace{-0.5em}
+    \resumeSubheading
+		{CompPhoto Lab}{\small Python, NeRF, 3D Generative AI, Scene Generation}
+		{Research Assistant}{Aug. 2023 -  Present}
+		
+		\vspace{0.25em}
+		Advised by Prof. Yu-Lun Liu. Conducting a research using NeRF to generate 3D unbounded scene generation.
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\vspace{-5pt}
+\vspace{-1.25em}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{Final project of introduction to database system. Using Nuxt and Vuetify to create a modern-look frontend. Also used Django as backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
-\resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{An accounting bot that allows users to record expenses via the Telegram application. \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
+\setlength\itemsep{0.25em}
+\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{inal project of introduction to database system. Designed to manage applicant data and support multiple reviewers in evaluating applicant information and assigning scores. Using Nuxt and Vuetify to create a modern-look frontend. Also used Django as backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
+\resumeSubItem{C++ Implementation of Root-parallelization MCTS (C++, MCTS, AI, Parallel Programming)}{Project of theory of computer games. Implemented a root-parallelization multi-thread MCTS algorithm for NoGo game. It can be also applied in various of games, like Go, Hex, etc. \href{https://github.com/jayin92/NYCU-theory-of-computer-games/tree/main/project3/code}{\underline{Link}} (Jan. 2023)}
+\resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{An accounting bot that allows users to record expenses via the Telegram application. Used Firebase as database for instant syncing and fast deployment.  \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
 \vspace{2pt}
-\resumeSubItem{pix2pix-terrain-generator (Python, PyTorch, GAN, Unity, Web Development)}{Using height maps and satellite images to train a GAN model that can be used to generate a realistic terrain model. Also developed a web client and a Unity client to make model can be used more easily. \href{https://github.com/jayin92/pix2pix-terrain-generator}{\underline{Link}} (Jul. 2020)}
+\resumeSubItem{VAE-pix2pix-terrain-generator (Python, PyTorch, GAN, Unity, Web Development)}{Used NASA's SRTM 1 Arc-Second dataset to collect altitude maps and MapTiler to collect corresponding satellite images from around the world. The collected images are used to train a VAE-pix2pix model, which is an VAE combined with pix2pix. The model adds realistic details to the heightmap and generates corresponding satellite images. 
+% Compared with the original pix2pix model, VAE-pix2pix can generate different styles of images by changing the value of the latent code.
+ \href{https://github.com/jayin92/pix2pix-terrain-generator}{\underline{Link}} (Jul. 2020)}
 \vspace{2pt}
-\resumeSubItem{UbikeAnywhereBot (Python, API, Crawler)}{A telegram chat bot that can plan the route. After users tell our bot the destination, our bot can automatically find the nearest available Ubike station and give users the route to the returned station. \href{https://github.com/jayin92/UBikeAnywhereBot}{\underline{Link}} (Jul. 2019)}
+\resumeSubItem{UbikeAnywhereBot (Python, API, Crawler)}{A Telegram Bot for Ubike route planning. The Bot first asks the user for their starting point and destination, and uses the PTX API provided by the government to obtain the names, coordinates, available bikes, and available spaces of all Ubike stations in Taiwan. 
+% Using those data, bot calculates the nearest available Ubike station to the starting point and destination, and inputs these four locations into Google Maps for navigation. 
+ \href{https://github.com/jayin92/UBikeAnywhereBot}{\underline{Link}} (Jul. 2019)}
 \resumeSubHeadingListEnd
-\vspace{-5pt}
+
+\vspace{-0.5em}
 
 %-----------Awards-----------------
 \section{Awards}
 \resumeSubHeadingListStart
+\setlength\itemsep{0.25em}
 \resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Marconix Science Award. The only recipient wthin 6 years.}
 \vspace{0.5pt}
 \resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
 \vspace{0.5pt}
-\resumeSubItem{Fourth Prize in 2021 Taiwan International Science Fair}{Be awarded the fourth prize out of 21 participants from world.}
-\vspace{0.5pt}
+% \resumeSubItem{Fourth Prize in 2021 Taiwan International Science Fair}{Be awarded the fourth prize out of 21 participants from world.}
+% \vspace{0.5pt}
+
 \resumeSubItem{Bronze Award of The 2022 ICPC Asia Taoyuan Regional Programming Contest}{Thirty-second place out of 100 teams. Second place of the bronze award.}
 \vspace{0.5pt}
 \resumeSubItem{Academic Achievements Award in 2021 Fall Semester}{Top 5 \% in the class.}
 \vspace{0.5pt}
-\resumeSubItem{Fundamental Course Award of Discrete Mathematics}{First place out of 92 students.}
-\vspace{0.5pt}
-\resumeSubItem{Fundamental Course Award of Digital Circuit Design}{Second place out of 121 students.}
-\vspace{0.5pt}
-\resumeSubItem{Fundamental Course Award of Data Structures \& Object-oriented Programming}{First place out of 88 students.}
-\vspace{0.5pt}
-\resumeSubItem{Fundamental Course Award of Introduction to Algorithms}{First place out of 111 students.}
+\resumeSubItem{Fundamental Course Award of Discrete Mathematics, Digital Circuit Design, Data Structures \& Object-oriented Programming and Introduction to Algorithms}{Top 5\% of these courses.}
 
 
 \resumeSubHeadingListEnd
@@ -172,26 +194,39 @@ right=1cm,
 \vspace{-5pt}
 \section{Extracurricular Activities}
   \resumeSubHeadingListStart
+  \setlength\itemsep{0.25em}
+   \resumeSubheading
+      {NYCU CS Student Union Association}{}
+      {Co-leader of Information Group}{Jul. 2023 - Present}
+      % \\vspace{0.5pt}
+      
+      Led 3 members to maintain the service provided by CS Union, including past exam system, introduction of CS department for high school and several web services.
+  	\iffalse
 	\resumeSubheading
     {NYCU Taoyaun Association}{}
-    {President}{July 2022 - Present}
+    {President}{Jul. 2022 - Jul. 2023}
     % \\vspace{0.5pt}
     
     Led 60 members from various of departments in NYCU to organized welcoming camp, campus tour for over 50 students from Taoyaun, Yunlin and Chiayi. By engaging in activity preparation, I acquired the skills to effectively communicate and collaborate with individuals from diverse backgrounds.
     \vspace{1pt}
+    
+   
+    \vspace{1pt}
+    
     \resumeSubheading
     {SITCON 2022 Agenda Committee}{}
     {Member}{Mar. 2022 - Sep. 2022}
-    \vspace{-0.5pt}
+    % \vspace{-0.5pt}
     
    	Organized events and review agendas at SITCON (the largest student information conference in East Asia), also responsible for organizing the forum that delved into the issues of information education in Taiwan.
     \vspace{1pt}
     \resumeSubheading
     {Wu-Ling High School Information Study Group}{}
     {Co-founder, Leader and Lecturer}{Sep. 2019 - Jul. 2021}
-    \vspace{-0.5pt}
+    % \vspace{-0.5pt}
     
     Found the study group in the second year of high school. Teaching over 60 students basic C++, data structure and algorithms, also holding programming competitions to encourage learning.
+    \fi
 \resumeSubHeadingListEnd
 
 \end{document}
