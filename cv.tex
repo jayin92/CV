@@ -41,7 +41,7 @@
 
 \usepackage[
 top=1cm,
-bottom=1cm,
+bottom=0.5cm,
 left=1cm,
 right=1.25cm,
 ]{geometry} 
@@ -130,7 +130,7 @@ right=1.25cm,
        	{Research \& Development Intern at Bing Geocoding}{Sep. 2023 - Present}
        	
        	\vspace{0.25em}
-       	Refined the dashboard used by engineers and scientists for evaluated the performance.
+       	Integrated code in backend component, made it able to populate new data format and displayed the them in dashboard. Also refined the dashboard to make it more useful for engineers and scientists.
        	\vspace{-0.5em}
    \resumeSubheading{IT Center of Department of Computer Science, NYCU}{\footnotesize Linux, Kubernetes, PHP, Laravel, Vue, CI/CD, GitLab flow}
        {Teaching Assistant of WWW and System Group}{Jul. 2022 - Present}
@@ -150,7 +150,7 @@ right=1.25cm,
     	{Backend Engineer Summer Intern}{Jul. 2023 - Sep. 2023}
     	
     	\vspace{0.25em}
-    	Developed a novel system to visualize the cloud service cost of each customer on each feature. Used Google Cloud Storage and Looker Studio for visualization. Tested and deployed to production environment. Developed in collaboration with the team's Scrum process. Cooperate with QA engineers to ensure the quality of system.
+    	Developed a novel system to calculate and visualize the cloud service costs for each customer per feature. Utilized Google Cloud Storage and Looker Studio for visualization. Tested and deployed the system in a production environment. Developed in collaboration with the team's Scrum process. Also engaged with Product Managers and sales teams to ensure the system meets their expectations.
 
 
 \resumeSubHeadingListEnd
@@ -160,8 +160,8 @@ right=1.25cm,
 \section{Projects}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{inal project of introduction to database system. Designed to manage applicant data and support multiple reviewers in evaluating applicant information and assigning scores. Using Nuxt and Vuetify to create a modern-look frontend. Also used Django as backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
-\resumeSubItem{C++ Implementation of Root-parallelization MCTS (C++, MCTS, AI, Parallel Programming)}{Project of theory of computer games. Implemented a root-parallelization multi-thread MCTS algorithm for NoGo game. It can be also applied in various of games, like Go, Hex, etc. \href{https://github.com/jayin92/NYCU-theory-of-computer-games/tree/main/project3/code}{\underline{Link}} (Jan. 2023)}
+\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{The final project for the introduction to database system course. Designed to manage applicant data and support multiple reviewers in evaluating applicant information and assigning scores. Using Nuxt and Vuetify to create a modern-looking frontend. Also used Django as the backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
+\resumeSubItem{C++ Implementation of Root-parallelization MCTS (C++, MCTS, AI, Parallel Programming)}{Project for theory of computer games. Implemented a root-parallelization multi-thread MCTS algorithm for NoGo game. It can be also applied in various of games, like Go, Hex, etc. \href{https://github.com/jayin92/NYCU-theory-of-computer-games/tree/main/project3/code}{\underline{Link}} (Jan. 2023)}
 \resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{An accounting bot that allows users to record expenses via the Telegram application. Used Firebase as database for instant syncing and fast deployment.  \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
 \vspace{2pt}
 \resumeSubItem{VAE-pix2pix-terrain-generator (Python, PyTorch, GAN, Unity, Web Development)}{Used NASA's SRTM 1 Arc-Second dataset to collect altitude maps and MapTiler to collect corresponding satellite images from around the world. The collected images are used to train a VAE-pix2pix model, which is an VAE combined with pix2pix. The model adds realistic details to the heightmap and generates corresponding satellite images. 
@@ -179,7 +179,7 @@ right=1.25cm,
 \section{Awards}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient wthin 6 years.}
+\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient wthin 10 years.}
 %\vspace{0.5pt}
 \resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
 \vspace{0.5pt}
@@ -198,12 +198,22 @@ right=1.25cm,
 \section{Extracurricular Activities}
   \resumeSubHeadingListStart
   \setlength\itemsep{0.25em}
-   \resumeSubheading
-      {NYCU Computer Science Student Association}{}
-      {Co-leader of Information Group}{Jul. 2023 - Present}
-      % \\vspace{0.5pt}
+       \resumeSubheading
+           {NYCU Taoyaun Association}{}
+           {President}{Jul. 2022 - Jul. 2023}
+           % \\vspace{0.5pt}
+           
+           Led 60 members from various of departments in NYCU to organized welcoming camp, campus tour for over 50 students from Taoyaun, Yunlin and Chiayi. By engaging in activity preparation, I acquired the skills to effectively communicate and collaborate with individuals from diverse backgrounds.
+  \resumeSubheading
+      {SITCON 2022 Agenda Committee}{}
+      {Member}{Mar. 2022 - Sep. 2022}
+      % \vspace{-0.5pt}
       
-      Led 3 members to maintain the service provided by the student association, including past exam system, introduction of CS department for high school and several web services.
+     	Organized events and review agendas at SITCON (the largest student information conference in East Asia), also responsible for organizing the forum that delved into the issues of information education in Taiwan.
+   
+
+         \vspace{1pt}
+         	\iffalse
   \resumeSubheading
       {SITCON 2022 Agenda Committee}{}
       {Member}{Mar. 2022 - Sep. 2022}
@@ -211,14 +221,13 @@ right=1.25cm,
       
         	Organized events and review agendas at SITCON (the largest student information conference in East Asia), also responsible for organizing the forum that delved into the issues of information education in Taiwan.
       \vspace{1pt}
-  	\iffalse
+
 	\resumeSubheading
-    {NYCU Taoyaun Association}{}
-    {President}{Jul. 2022 - Jul. 2023}
-    % \\vspace{0.5pt}
-    
-    Led 60 members from various of departments in NYCU to organized welcoming camp, campus tour for over 50 students from Taoyaun, Yunlin and Chiayi. By engaging in activity preparation, I acquired the skills to effectively communicate and collaborate with individuals from diverse backgrounds.
-    \vspace{1pt}
+	      {NYCU Computer Science Student Association}{}
+	      {Co-leader of Information Group}{Jul. 2023 - Present}
+	      % \\vspace{0.5pt}
+	      
+	      Led 3 members to maintain the service provided by the student association, including past exam system, introduction of CS department for high school and several web services.
     
    
     \vspace{1pt}
