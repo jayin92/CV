@@ -109,7 +109,9 @@ right=1.25cm,
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
       {B.S. in Computer Science;  GPA: 4.23/4.3 (Overall), 4.26/4.3 (Major)}{Jul. 2021 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} DS and OOP, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System and Network Administration}}}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} DS and OOP, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System and Network Administration}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:}  Computer Vision for UAV Autopilot, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, System and Network Administration}}}
+     
     \resumeSubHeadingListEnd
 
 
@@ -124,9 +126,15 @@ right=1.25cm,
     %	\item 
     %	\item Maintained Kubernetes cluster and linux workstations used in CS department in system group. Also had experience in surveying Fluentd and fluent bit.
     %\end{itemize}
-    	
     \resumeSubheading
-       	{Microsoft}{\small .NET Framework, jQuery}
+    		{CompPhoto Lab}{\small Python, NeRF, 3D Generative AI, Scene Generation}
+    		{Research Assistant and System Administrator}{Aug. 2023 -  Present}
+    		
+    		\vspace{0.25em}
+    		Advised by Prof. Yu-Lun Liu. Conducting a research using NeRF and NeuS to generate realistic 3D unbounded scene. 
+   		\vspace{-0.5em}
+    \resumeSubheading
+       	{Microsoft}{\small Aether, jQuery}
        	{Research \& Development Intern at Bing Geocoding}{Sep. 2023 - Present}
        	
        	\vspace{0.25em}
@@ -138,36 +146,37 @@ right=1.25cm,
        \vspace{0.25em}
        Developed the backend of teaching assistant contact information system using PHP and Laravel. And learned how to design the database schema and write RESTful API, also used OpenAPI to write API document. Also be familiar with the process of software development, including git version control, merge requests and CI/CD.
       	\vspace{-0.5em}
-   \resumeSubheading
-		{CompPhoto Lab}{\small Python, NeRF, 3D Generative AI, Scene Generation}
-		{Research Assistant}{Aug. 2023 -  Present}
-		
-		\vspace{0.25em}
-		Advised by Prof. Yu-Lun Liu. Conducting a research using NeRF to generate 3D unbounded scene generation.
-		\vspace{-0.5em}
+   
     \resumeSubheading
     	{Appier}{\footnotesize MongoDB, Trino, Argo Workflow, Kubernetes, GCP, BigQuery, Looker Studio, Agile, System Design}
     	{Backend Engineer Summer Intern}{Jul. 2023 - Sep. 2023}
     	
     	\vspace{0.25em}
-    	Developed a novel system to calculate and visualize the cloud service costs for each customer per feature. Utilized Google Cloud Storage and Looker Studio for visualization. Tested and deployed the system in a production environment. Developed in collaboration with the team's Scrum process. Also engaged with Product Managers and sales teams to ensure the system meets their expectations.
+    	Developed a novel system to calculate and visualize the cloud service costs for each customer per feature, which replaced the traditional manual estimation. By automatically collecting and calculating cost, it achieving 7200x speedup. Utilized Google Cloud Storage and Looker Studio for visualization. Developed in collaboration with the team's Scrum process. Also engaged with Product Managers and sales teams to ensure it meets their expectations.
 
 
 \resumeSubHeadingListEnd
+\vspace{-1.25em}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes}{\\ Chih-Hai Su*, Chih-Yao Hu*, Shr-Ruei Tsai*, \textbf{Jie-Ying Lee}*, Chin-Yang Lin, Yu-Lun Liu (* denotes equal contribution) BoostMVSNeRFs aims to enhance the rendering quality of MVS-based NeRFs in large-scale scenes. Our method significantly improves the rendering quality in large-scale scenes and unbounded outdoor scenes. \textit{This work is currently under review at SIGGRPAH 2024.}}
+\resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------------
 \vspace{-1.25em}
 \section{Projects}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{The final project for the introduction to database system course. Designed to manage applicant data and support multiple reviewers in evaluating applicant information and assigning scores. Using Nuxt and Vuetify to create a modern-looking frontend. Also used Django as the backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
-\resumeSubItem{C++ Implementation of Root-parallelization MCTS (C++, MCTS, AI, Parallel Programming)}{Project for theory of computer games. Implemented a root-parallelization multi-thread MCTS algorithm for NoGo game. It can be also applied in various of games, like Go, Hex, etc. \href{https://github.com/jayin92/NYCU-theory-of-computer-games/tree/main/project3/code}{\underline{Link}} (Jan. 2023)}
-\resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{An accounting bot that allows users to record expenses via the Telegram application. Used Firebase as database for instant syncing and fast deployment.  \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
-\vspace{2pt}
 \resumeSubItem{VAE-pix2pix-terrain-generator (Python, PyTorch, GAN, Unity, Web Development)}{Used NASA's SRTM 1 Arc-Second dataset to collect altitude maps and MapTiler to collect corresponding satellite images from around the world. The collected images are used to train a VAE-pix2pix model, which is an VAE combined with pix2pix. The model adds realistic details to the heightmap and generates corresponding satellite images. 
 % Compared with the original pix2pix model, VAE-pix2pix can generate different styles of images by changing the value of the latent code.
- \href{https://github.com/jayin92/pix2pix-terrain-generator}{\underline{Link}} (Jul. 2020)}
-\vspace{2pt}
+ \href{https://github.com/jayin92/TerrainGAN}{\underline{Link}} (Jul. 2020)}
+ \vspace{2pt}
+\resumeSubItem{C++ Implementation of Root-parallelization MCTS (C++, MCTS, AI, Parallel Programming)}{Project for theory of computer games. Implemented a root-parallelization multi-thread MCTS algorithm for NoGo game. It can be also applied in various of games, like Go, Hex, etc. \href{https://github.com/jayin92/NYCU-theory-of-computer-games/tree/main/project3/code}{\underline{Link}} (Jan. 2023)}
+\resumeSubItem{Camp Management System (Vue.js, Nuxt.js, Vuetify.js, PostgreSQL, Python, Django)}{The final project for the introduction to database system course. Designed to manage applicant data and support multiple reviewers in evaluating applicant information and assigning scores. Using Nuxt and Vuetify to create a modern-looking frontend. Also used Django as the backend to create a RESTful API server. \href{https://github.com/jayin92/camp-management-system}{\underline{Link}} (Jan. 2023)}
+
+%\resumeSubItem{AccountingTGBot (Python, Firebase, CI/CD, Heroku)}{An accounting bot that allows users to record expenses via the Telegram application. Used Firebase as database for instant syncing and fast deployment.  \href{https://github.com/jayin92/AccountingTGBot}{\underline{Link}} (Jun. 2022)}
+%\vspace{2pt}
 \resumeSubItem{UbikeAnywhereBot (Python, API, Crawler)}{A Telegram Bot for Ubike route planning. The Bot first asks the user for their starting point and destination, and uses the PTX API provided by the government to obtain the names, coordinates, available bikes, and available spaces of all Ubike stations in Taiwan. 
 % Using those data, bot calculates the nearest available Ubike station to the starting point and destination, and inputs these four locations into Google Maps for navigation. 
  \href{https://github.com/jayin92/UBikeAnywhereBot}{\underline{Link}} (Jul. 2019)}
@@ -179,7 +188,7 @@ right=1.25cm,
 \section{Awards}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient wthin 10 years.}
+\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient within ten years.}
 %\vspace{0.5pt}
 \resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
 \vspace{0.5pt}
