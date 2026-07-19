@@ -40,11 +40,11 @@
 \addtolength{\textheight}{1in}
 
 \usepackage[
-top=0.75cm,
-bottom=0.5cm,
-left=1cm,
-right=1cm,
-]{geometry} 
+top=1.4cm,
+bottom=1.4cm,
+left=1.6cm,
+right=1.6cm,
+]{geometry}
 
 
 \urlstyle{rm}
@@ -98,7 +98,7 @@ right=1cm,
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Huge Jie-Ying (Jay) Lee 李杰穎}} & Email: \href{mailto:jayinnn.cs10@nycu.edu.tw}{\underline{jayinnn.cs10@nycu.edu.tw}}\\
+  \textbf{{\Huge Jie-Ying (Jay) Lee 李杰穎}} & Email: \href{mailto:jayinnn.cs14@nycu.edu.tw}{\underline{jayinnn.cs14@nycu.edu.tw}}\\
 
   Homepage: \href{https://jayinnn.dev/}{\underline{https://jayinnn.dev/}} & Mobile:~~~+886-977-122-420 \\
   Linkedin: \href{https://www.linkedin.com/in/jayinnn/}{\underline{https://www.linkedin.com/in/jayinnn/}} \\
@@ -110,13 +110,16 @@ right=1cm,
   \resumeSubHeadingListStart
     \resumeSubheading
       {National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
-      {B.S. in Computer Science;  GPA: 4.22/4.3 (Overall), 4.26/4.3 (Major); Ranking: 11/184 (5.98\%)}{Jul. 2021 - Present}
+      {B.S. in Computer Science;  GPA: 4.23/4.3 (Overall), 4.26/4.3 (Major)}{Jul. 2021 - Jun. 2025}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Ranking:} 10/184 (4.42\%)}}}
       % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} DS and OOP, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, Introduction to Algorithm, Introduction to Database System, System and Network Administration}}}
       % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:}  Computer Vision for UAV Autopilot, Introduction to A.I., Introduction to ML, Introduction to Image Processing, Competitive Programming I, Theory of Computer Games, Probability, System and Network Administration, Introduction to Database System}}}
       
     \resumeSubheading
           {ETH Zurich}{Zurich, Switzerland}
-          {Exchange Student in the Department of Computer Science}{Sep. 2024 - Feb. 2025 (expected)}
+          {Exchange Student in the Department of Computer Science}{Sep. 2024 - Feb. 2025}
+          {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Computer Graphics (6.0/6.0), Visual Computing (6.0/6.0), Computer Vision (5.5/6.0)}}}
+
      
     \resumeSubHeadingListEnd
 
@@ -133,59 +136,101 @@ right=1cm,
     %	\item Maintained Kubernetes cluster and linux workstations used in CS department in system group. Also had experience in surveying Fluentd and fluent bit.
     %\end{itemize}
     \resumeSubheading
-    		{Google}{\small SAM, Research, Knowledge Distillation}
-    		{Software Engineering Intern}{Jun. 2024 -  Present}
-    		
-    		\vspace{0.25em}
-    		During my internship with the Pixel Camera Team, I am focused on integrating the Segment Anything Model (SAM) into mobile devices. My work involves a comprehensive review of relevant research papers to identify the best strategies for deploying this heavyweight model on mobile platforms. I am utilizing knowledge distillation to transfer the model's capabilities to a lightweight MobileNetV4, achieving only a 4\% performance drop with a latency of 20 ms (8x faster) on a mobile TPU.
-   		\vspace{-0.5em}
-    \resumeSubheading
-    		{CompPhoto Lab}{\small Python, Research, NeRF, 3D Generative AI, Scene Generation}
-    		{Research Assistant and System Administrator}{Aug. 2023 -  Present}
-    		
-    		\vspace{0.25em}
-    		Advised by Prof. Yu-Lun Liu. Conduct a research that generate scene-level 3D Gaussian from a series of BEV images.
-   		\vspace{-0.5em}
+    		{Google}{\small Pixel Camera, On-device Perception, Computational Photography}
+    		{Software Engineer}{Sep. 2025 -  Present}
 
-   \resumeSubheading{IT Center of Department of Computer Science, NYCU}{\footnotesize Linux, Kubernetes, PHP, Laravel, Vue, CI/CD, GitLab flow}
-       {Teaching Assistant of WWW and System Group}{Jul. 2022 - Present}
+    		\vspace{-0.2em}
+    		Software Engineer on the Pixel Camera Team, working on on-device perception and computational photography.
+   		\vspace{0.5em}
+    \resumeSubheading
+    		{CompPhoto Lab, NYCU}{\small Python, Research, NeRF, 3DGS, Diffusion Models, Embodied AI}
+    		{Research Assistant and System Administrator}{Aug. 2023 -  Present}
+
+    		\vspace{-0.2em}
+    		Advised by Prof. Yu-Lun Liu. Working on 3D scene synthesis, generative models for vision, and embodied AI, with a focus on NeRF, 3D Gaussian Splatting, and vision-language navigation. Led Skyfall-GS (ECCV 2026), which synthesizes immersive 3D urban scenes from satellite imagery. Continued as a research assistant after receiving my B.S. (Sep. 2025).
+   		\vspace{0.5em}
+    \resumeSubheading
+    		{Google}{\small SAM, Research, Knowledge Distillation}
+    		{Software Engineering Intern}{Jun. 2024 -  Sep. 2024}
+    		
+    		\vspace{-0.2em}
+    		During my internship with the Pixel Camera Team, I spearheaded the integration of the Segment Anything Model (SAM) into mobile devices. My work involved conducting a comprehensive review of cutting-edge research papers to identify optimal strategies for deploying complex models on mobile platforms. Leveraging knowledge distillation techniques, I successfully transferred SAM's capabilities to a lightweight MobileNetV4 architecture. This resulted in remarkable outcomes: achieving only a 4\% performance drop compared to the original model, while significantly reducing latency to 20 ms (8x faster) on a mobile TPU.
+   		\vspace{0.5em}
+
+   \resumeSubheading{IT Center of CS Department, NYCU}{\footnotesize Linux, Kubernetes, PHP, Laravel, Vue, CI/CD, GitLab flow}
+       {Teaching Assistant of WWW and System Group}{Jul. 2022 - Jun. 2025}
        
-       \vspace{0.25em}
+       \vspace{-0.2em}
        Developed the backend of teaching assistant contact information system using PHP and Laravel. And learned how to design the database schema and write RESTful API, also used OpenAPI to write API document. Also be familiar with the process of software development, including git version control, merge requests and CI/CD.
-      	\vspace{-0.5em}
+      	\vspace{0.5em}
    \resumeSubheading
              	{Microsoft}{\small AzureML, NLP, Address Parsing, C\#, Aether, jQuery}
              	{Research \& Development Intern at Bing Geocoding}{Sep. 2023 - Jun. 2024}
              	
-             	\vspace{0.25em}
-             	Integrated code in backend component, made it able to populate new data format and visualized them in dashboard. Currently focusing on validating the DeepCAL ML model and improving the training pipeline.
-             	\vspace{-0.5em}
+             	\vspace{-0.2em}
+             	Integrated code in backend component, made it able to populate new data format and visualized them in dashboard. Validated the DeepCAL ML model and improved the training pipeline.
+             	\vspace{0.5em}
     \resumeSubheading
     	{Appier}{\footnotesize MongoDB, Trino, Argo Workflow, Kubernetes, GCP, BigQuery, Looker Studio, Agile, System Design}
     	{Backend Engineer Summer Intern}{Jul. 2023 - Sep. 2023}
     	
-    	\vspace{0.25em}
+    	\vspace{-0.2em}
     	Developed a novel system to calculate and visualize the cloud service costs for each customer per feature, which replaced the traditional manual estimation. By automatically collecting and calculating cost, it achieving 7200x speedup. Utilized Google Cloud Storage and Looker Studio for visualization. Developed in collaboration with the team's Scrum process. Also engaged with PMs and sales teams to ensure it meets their expectations.
 
 
 \resumeSubHeadingListEnd
 
-\vspace{-1.25em}
 \section{Publications}
 \resumeSubHeadingListStart
+\resumeSubItem{Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite Imagery}{\\ \textbf{Jie-Ying Lee}, Yi-Ruei Liu, Shr-Ruei Tsai, Wei-Cheng Chang, Chung-Ho Wu, Jiewen Chan, Zhenjun Zhao, Chieh Hubert Lin, Yu-Lun Liu\\\textit{European Conference on Computer Vision (ECCV), 2026.}
+
+Skyfall-GS synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.}
+
+\resumeSubItem{Pantheon360: Taming Digital Twin Generation via 3D-Aware 360° Video Diffusion}{\\ Ting-Hsuan Chen*, Ying-Huan Chen*, Tao Tu, \textbf{Jie-Ying Lee}, Cho-Ying Wu, Fangzhou Lin, Hengyuan Zhang, David Paz, Xinyu Huang, Yuliang Guo\dag, Yu-Lun Liu\dag, Yue Wang\dag, Liu Ren (* denotes equal contribution, \dag~denotes corresponding author)\\\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.}
+
+Pantheon360 is a controllable 360° video diffusion framework for digital twin generation that synthesizes high-fidelity videos from sparse 360° inputs, letting the diffusion model focus on photorealistic texture refinement while a 3D Cache enforces global geometric consistency.}
+
+\resumeSubItem{BRDFusion: Physics Meets Generation for Urban Scene Inverse Rendering}{\\ Yi-Ruei Liu, \textbf{Jie-Ying Lee}, Zheng-Hui Huang, Yu-Lun Liu\dag, Chih-Hao Lin\dag~(\dag~denotes corresponding author)\\\textit{arXiv preprint, 2026.}
+
+BRDFusion is an inverse rendering framework for urban scenes that unifies physics-based rendering with generative diffusion priors to recover explicit material and lighting properties from video, enabling high-quality relighting and simulation.}
+
+\resumeSubItem{LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal}{\\ Shr-Ruei Tsai, Wei-Cheng Chang, \textbf{Jie-Ying Lee}, Chih-Hai Su, Yu-Lun Liu\\\textit{IEEE/CVF International Conference on Computer Vision (ICCV), 2025.}
+
+LightsOut is a diffusion-based outpainting framework that enhances lens flare removal by reconstructing off-frame light sources, combining a multitask regression module with LoRA fine-tuned diffusion models to produce realistic and physically consistent results.}
+
+\resumeSubItem{See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation}{\\ Chih-Yao Hu*, Yang-Sen Lin*, Yuna Lee, Chih-Hai Su, \textbf{Jie-Ying Lee}, Shr-Ruei Tsai, Chin-Yang Lin, Kuan-Wen Chen, Tsung-Wei Ke, Yu-Lun Liu (* denotes equal contribution)\\\textit{Conference on Robot Learning (CoRL), 2025.}
+
+See, Point, Fly (SPF) is a training-free framework for aerial vision-and-language navigation. By leveraging vision-language models and reformulating navigation as a 2D spatial grounding task, SPF enables universal unmanned aerial navigation without task-specific training.}
+
+\resumeSubItem{AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360° Unbounded Scene Inpainting}{\\ Chung-Ho Wu*, Yang-Jung Chen*, Ying-Huan Chen, \textbf{Jie-Ying Lee}, Bo-Hsu Ke, Chun-Wei Tuan Mu, Yi-Chuan Huang, Chin-Yang Lin, Min-Hung Chen, Yen-Yu Lin, Yu-Lun Liu (* denotes equal contribution)\\\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.}
+
+The approach introduces (1) depth-aware unseen mask generation for accurate occlusion identification, (2) Adaptive Guided Depth Diffusion, a zero-shot method for accurate initial point placement without requiring additional training, and (3) SDEdit-based detail enhancement for multi-view coherence.}
+
+\resumeSubItem{SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes}{\\ Cheng-De Fan, Chen-Wei Chang, Yi-Ruei Liu, \textbf{Jie-Ying Lee}, Jiun-Long Huang, Yu-Chee Tseng, Yu-Lun Liu\\\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.}
+
+SpectroMotion is a novel approach that combines 3D Gaussian Splatting with physically-based rendering (PBR) and deformation fields to reconstruct dynamic specular scenes and is the only existing 3DGS method capable of synthesizing photorealistic real-world dynamic specular scenes.}
+
 \resumeSubItem{BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes}{\\ Chih-Hai Su*, Chih-Yao Hu*, Shr-Ruei Tsai*, \textbf{Jie-Ying Lee}*, Chin-Yang Lin, Yu-Lun Liu (* denotes equal contribution)\\\textit{ACM Special Interest Group on Computer Graphics and Interactive Techniques (SIGGRAPH), 2024.}
 
 BoostMVSNeRFs aims to enhance the rendering quality of MVS-based NeRFs in large-scale scenes. Our method significantly improves the rendering quality in large-scale scenes and unbounded outdoor scenes.}
+
+\resumeSubHeadingListEnd
+
+%-----------SERVICE-----------------
+\section{Academic Service}
+\resumeSubHeadingListStart
+\setlength\itemsep{0.25em}
+\resumeSubItem{Reviewer}{ECCV, IJCV}
+\vspace{2pt}
+\resumeSubItem{Teaching Assistant}{Image and Video Generation, NYCU (2025 Fall)}
 \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-\vspace{-0.75em}
 \section{Projects}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{BEVGaussian: Generate Scene-level 3D Gaussian from BEV image}{In this work, we aim to generate scene-level 3D Gaussians from bird's-eye view (BEV) images, including satellite images, heightmaps, and semantic maps. Existing methods are limited to object-level generation and cannot produce scene-level 3D Gaussians. To address this, we leverage existing object generation techniques to create high-quality 3D Gaussians from BEV images and then integrate these objects into the scene. Our approach is training-free and allows for easy modification of the 3D scenes by using BEV images as input.
- (Jun. 2024)}
+% \resumeSubItem{BEVGaussian: Generate Scene-level 3D Gaussian from BEV image}{In this work, we aim to generate scene-level 3D Gaussians from bird's-eye view (BEV) images, including satellite images, heightmaps, and semantic maps. Existing methods are limited to object-level generation and cannot produce scene-level 3D Gaussians. To address this, we leverage existing object generation techniques to create high-quality 3D Gaussians from BEV images and then integrate these objects into the scene. Our approach is training-free and allows for easy modification of the 3D scenes by using BEV images as input. (Jun. 2024)}
  \vspace{2pt}
 \resumeSubItem{VAE-pix2pix-terrain-generator}
 % (Python, PyTorch, GAN, Unity, Web Development)}
@@ -208,22 +253,26 @@ BoostMVSNeRFs aims to enhance the rendering quality of MVS-based NeRFs in large-
 
 
 %-----------Awards-----------------
-\vspace{-0.75em}
 \section{Awards}
 \resumeSubHeadingListStart
 \setlength\itemsep{0.25em}
-\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient within ten years.}
-%\vspace{0.5pt}
-% \resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
+\resumeSubItem{Shun-I Chu Zyxel Scholarship}{Awarded to one of only two computer science students for exceptional academic performance.}
 \vspace{0.5pt}
-% \resumeSubItem{Fourth Prize in 2021 Taiwan International Science Fair}{Be awarded the fourth prize out of 21 participants from world.}
-% \vspace{0.5pt}
-\resumeSubItem{Third Place of the NYCU CS Undergraduate Research Competition}{Awarded for the project "BEVGaussian: Generate Scene-level 3D Gaussian from BEV image."}
+\resumeSubItem{NSTC Research Grant for University Students}{Awarded the undergraduate research grant by the National Science and Technology Council, Taiwan (2024).}
+\vspace{0.5pt}
+\resumeSubItem{Third Place of the NYCU CS Undergraduate Research Competition}{Awarded for the project ``BEVGaussian: Generate Scene-level 3D Gaussian from BEV image.''}
+\vspace{0.5pt}
 \resumeSubItem{Bronze Award of The 2022 ICPC Asia Taoyuan Regional Programming Contest}{Thirty-second place out of 100 teams. Second place of the bronze award.}
 \vspace{0.5pt}
 \resumeSubItem{Academic Achievements Award in 2021 Fall Semester}{Top 5\% in the class.}
 \vspace{0.5pt}
 \resumeSubItem{Fundamental Course Award of Discrete Mathematics, Digital Circuit Design, Data Structures \& Object-oriented Programming and Introduction to Algorithms}{Top 5\% of these courses.}
+\vspace{0.5pt}
+\resumeSubItem{Marconix Award of 19th Marconix Science Award}{Top award in Macronix Science Award. The only recipient within ten years.}
+\vspace{0.5pt}
+\resumeSubItem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
+\vspace{0.5pt}
+\resumeSubItem{Fourth Prize in 2021 Taiwan International Science Fair}{Be awarded the fourth prize out of 21 participants from world.}
 
 
 \resumeSubHeadingListEnd
