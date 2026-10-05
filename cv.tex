@@ -65,21 +65,21 @@ right=1.6cm,
 \newcommand{\edu}[5]{%
   \item \textbf{#1} \hfill #2\\
   \textit{#3} \hfill \textit{#4}%
-  \ifx\relax#5\relax\else\\{\small #5}\fi}
+  \ifx\relax#5\relax\else\\#5\fi}
 
 % Experience: {organization}{role}{dates}{description}
 \newcommand{\exper}[4]{%
   \item \textbf{#1} \,\textendash\, \textit{#2} \hfill #3\\*
-  {\small #4}}
+  #4}
 
 % Publication: {title}{authors}{venue}{links}
 \newcommand{\pub}[4]{%
   \item \textbf{#1}\\*
-  {\small #2}\\*
+  #2\\*
   {\small\textit{#3}\ifx\relax#4\relax\else\quad #4\fi}}
 
 % Labeled one-liner: {label}{text}
-\newcommand{\cvitem}[2]{\item {\small\textbf{#1}: #2}}
+\newcommand{\cvitem}[2]{\item \textbf{#1}: #2}
 
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
@@ -101,7 +101,7 @@ right=1.6cm,
 
 %-----------RESEARCH INTERESTS-----------------
 \section{Research Interests}
-{\small Moving from 3D vision and generative 3D (NeRF, 3D Gaussian Splatting) toward robot learning: (1) unified, flexible interfaces that let existing robot policies take in new sensing modalities such as vision, touch, and sound; (2) robots that continually improve themselves after deployment.}
+{Moving from 3D vision and generative 3D (NeRF, 3D Gaussian Splatting) toward robot learning: (1) unified, flexible interfaces that let existing robot policies take in new sensing modalities such as vision, touch, and sound; (2) robots that continually improve themselves after deployment.}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -124,7 +124,7 @@ right=1.6cm,
     {\textbf{Jie-Ying Lee}, Yi-Ruei Liu, Shr-Ruei Tsai, Wei-Cheng Chang, Chung-Ho Wu, Jiewen Chan, Zhenjun Zhao, Chieh Hubert Lin, Yu-Lun Liu}
     {European Conference on Computer Vision (ECCV), 2026.}
     {\link{https://skyfall-gs.jayinnn.dev/}{Project} \link{https://arxiv.org/abs/2510.15869}{arXiv}}\\
-    {\small Synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.}
+    {Synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.}
 
 \pub{YoCausal: How Far is Video Generation from World Model? A Causality Perspective}
     {You-Zhe Xie, Yu-Hsuan Li, \textbf{Jie-Ying Lee}, Kaipeng Zhang, Yu-Lun Liu, Zhixiang Wang}
@@ -168,7 +168,7 @@ right=1.6cm,
 \end{cvlist}
 
 %-----------EXPERIENCES-----------------
-\section{Experiences}
+\section{Experience}
 \begin{cvlist}
 \exper{Google}{Software Engineer, Pixel Camera Team}{Sep. 2025 -- Present}
   {Building on-device perception for computational photography. Mentoring an intern on real-time camera composition control driven by LLM-generated state machines.}
@@ -206,9 +206,7 @@ right=1.6cm,
 \cvitem{Bronze Award of The 2022 ICPC Asia Taoyuan Regional Programming Contest}{Ranked 32nd of 100 teams; second among bronze-award teams.}
 \cvitem{Academic Achievements Award in 2021 Fall Semester}{Top 5\% in the class.}
 \cvitem{Fundamental Course Award of Discrete Mathematics, Digital Circuit Design, Data Structures \& Object-oriented Programming and Introduction to Algorithms}{Top 5\% of these courses.}
-\cvitem{Macronix Award of 19th Macronix Science Award}{Top award in Macronix Science Award. The only recipient within ten years.}
-\cvitem{Second Place in 60th National Primary and High School Science Fair}{Awarded the best work at the 60th national science fair (The first place is absent) out of 8 all participants who are the first place from cities in Taiwan.}
-\cvitem{Fourth Prize in 2021 Taiwan International Science Fair}{Awarded fourth prize out of 21 international participants.}
+\cvitem{High School Science Awards}{Macronix Award at the 19th Macronix Science Award (top award; the only recipient in ten years); Second Place at the 60th National Primary and High School Science Fair (highest prize awarded, as no first place was given; 8 finalists, each a city-level first-place winner); Fourth Prize at the 2021 Taiwan International Science Fair (21 international participants).}
 \end{cvlist}
 
 %-----------PROJECTS-----------------
